@@ -3,39 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página web</title>
+    <title>Gran Casino Jerez</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .casino-header {
+            background: linear-gradient(90deg, #d35400, #e67e22);
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .casino-header img {
+            width: 70px;
+        }
+        .game-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .game-card img:hover {
+            transform: scale(1.1);
+        }
+        .progress-bar {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<body class="text-bg-light">
+<body>
     
-    <div class="container-fluid pt-2 text-bg-primary d-flex align-items-center">
-        <img src="resources/logocasino.png" alt="Logo del casino" class="me-3" style="width: 60px; height: auto;">
-        <h1 class="text-center text-uppercase mb-0">Gran Casino Jerez</h1>
+    <div class="casino-header d-flex align-items-center justify-content-center">
+        <img src="resources/logocasino.png" alt="Logo del casino" class="me-3">
+        <h1 class="text-uppercase fw-bold mb-0">Gran Casino Jerez</h1>
     </div>
 
+    <h2 class="text-center mt-5 p-3 bg-dark rounded">¡Vive la emoción del mejor casino del país!</h2>
 
-    <h2 class=" mt-5 mb-5 p-4 container-fluid text-bg-dark d-grid justify-content-center">¡Descubre nuestras actividades más ludópatas en el mejor casino del país!</h2>
-
-    <div class="text-center row">   
-        <div class="col">
-            <img class="rounded-circle img-fluid w-50 h-auto" src="resources/tragaperras.jpeg" alt="tragaperras"> 
+    <div class="container text-center row mt-4">   
+        <div class="col game-card">
+            <img class="rounded img-fluid" src="resources/tragaperras.jpeg" alt="Tragaperras"> 
             <p class="h5 mt-2">TRAGAPERRAS</p>
         </div>
-        <div class="col">
-            <img class="rounded-circle img-fluid w-50 h-auto" src="resources/ruleta.jpeg" alt="ruleta">
+        <div class="col game-card">
+            <img class="rounded img-fluid" src="resources/ruleta.jpeg" alt="Ruleta">
             <p class="h5 mt-2">RULETA</p>
         </div>
-        <div class="col">
-            <img class="rounded-circle img-fluid w-50 h-auto" src="resources/jackpot.jpg" alt="jackpot">
+        <div class="col game-card">
+            <img class="rounded img-fluid" src="resources/jackpot.jpg" alt="Jackpot">
             <p class="h5 mt-2">JACKPOT</p>
         </div>
     </div>
 
-    <div class="container mt-5 mb-5 text-bg-primary">
-        <h2>Características de nuestro casino</h2>
-        <p>La siguiente tabla representa las distintas promociones y servicios que ofrecemos:</p>            
-        <table class="table table-hover">
+    <div class="container mt-5 text-bg-primary p-4 rounded">
+        <h2>Características del Casino</h2>
+        <p>Descubre nuestras promociones y servicios exclusivos:</p>            
+        <table class="table table-dark table-hover text-center">
           <thead>
             <tr>
               <th>Juegos</th>
@@ -61,65 +89,38 @@
             </tr>
           </tbody>
         </table>
-      </div>
-
-
-      <div class="d-grid justify-content-center">
-        <h2>Pinche aquí para navegar por los demás casinos de España: </h2>
-        <div class="btn-group justify-content-center">
-          <a href="https://www.casinogranmadridonline.es/">
-            <button class="btn btn-secondary">
-                Gran Casino Madrid
-            </button>
-          </a>
-          <a href="https://www.casinobarcelona.es/">
-            <button class="btn btn-danger">
-                Gran Casino Barcelona
-            </button>
-          </a>
-          <a href="https://www.betfair.es/">
-            <button class="btn btn-success">
-                Betfair777
-            </button>
-          </a>
-
-        </div>
-      </div>
-
-    <div class="m-3 alert alert-danger">
-        <strong>Peligro!</strong> Más del 70% alcanzan la locura máxima. Juega con conciencia. Esto no es un juego.
     </div>
 
-    <div class="progress">
-        
-        <div class="progress-bar bg-danger" style="width:70%">
-          Ludópatas
+    <div class="container text-center mt-4">
+        <h2>Otros Casinos en España</h2>
+        <div class="btn-group mt-3">
+            <a href="https://www.casinogranmadridonline.es/" class="btn btn-secondary">Gran Casino Madrid</a>
+            <a href="https://www.casinobarcelona.es/" class="btn btn-danger">Gran Casino Barcelona</a>
+            <a href="https://www.betfair.es/" class="btn btn-success">Betfair777</a>
         </div>
-        <div class="progress-bar bg-warning" style="width:10%">
-          Normal
-        </div>
-        <div class="progress-bar bg-success" style="width:20%">
-          Gente nueva
-        </div>
-      </div> 
+    </div>
 
-      <div class="container mt-4 justify-content-center d-flex">                                      
-        <div class="spinner-grow text-muted"></div>
-        <div class="spinner-grow text-primary"></div>
-        <div class="spinner-grow text-success"></div>
-        <div class="spinner-grow text-info"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text-danger"></div>
-        <div class="spinner-grow text-secondary"></div>
-        <div class="spinner-grow text-dark"></div>
-        <div class="spinner-grow text-light"></div>
-      </div>
+    <div class="container text-center mt-5">
+        <div class="alert alert-danger">
+            <strong>¡Atención!</strong> El juego puede ser adictivo. Juega con responsabilidad.
+        </div>
+    </div>
 
-    <footer class=" mx-5 p-4 d-grid justify-content-center">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="about.html">Previous</a></li>
+    <div class="container text-center">
+        <h3>Perfil de Jugadores</h3>
+        <div class="progress">
+            <div class="progress-bar bg-danger" style="width:70%">Ludópatas</div>
+            <div class="progress-bar bg-warning" style="width:10%">Moderados</div>
+            <div class="progress-bar bg-success" style="width:20%">Nuevos Jugadores</div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="promos.html">Previous</a></li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="about.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="promos.html">3</a></li>
             <li class="page-item"><a class="page-link" href="about.html">Next</a></li>
         </ul> 
     </footer>
